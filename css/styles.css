@@ -12840,10 +12840,12 @@ header.masthead .masthead-heading {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  border: 1px solid #222;
+  border: 1px solid #2a2e5e;
   padding: 10px 11px;
   color: #2a2e5e;
   transition: all 0.5s;
+  border-radius: 20px;
+  box-shadow: 1px 4px 14px #2a2e5e;
 }
 
 a {
@@ -12973,17 +12975,21 @@ h3.sidebar-heading {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .block-21 .text {
   width: calc(100% - 100px);
 }
+
 .block-21 .text .heading {
   font-size: 16px;
 }
-.block-21 .text .meta > div {
+
+.block-21 .text .meta>div {
   display: inline-block;
   font-size: 12px;
   margin-right: 5px;
 }
+
 .mr-4 {
   margin-right: 1.5rem !important;
 }
@@ -13000,19 +13006,14 @@ header#single-blog-header {
   background-size: cover;
 }
 
-#blog-single-content figure{
-  height: 400px;
+
+#blog-single-content .fill img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
-#blog-single-content figure img{
-  height: 100%;
-    width: 100%;
-    /* object-fit: cover; */
-    max-width: 100%;
-    max-height: 100%;
-}
-
-footer{
+footer {
   background: #212529;
   color: #fff;
 }
