@@ -6375,7 +6375,7 @@ fieldset:disabled .btn {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 0;
+  padding: 2px;
 }
 
 .modal-footer {
@@ -6392,6 +6392,34 @@ fieldset:disabled .btn {
 
 .modal-footer>* {
   margin: 0.25rem;
+}
+
+.ads-height {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 150px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0a476d; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a476d; 
 }
 
 @media (min-width: 576px) {
@@ -12837,9 +12865,10 @@ header.masthead .masthead-heading {
   #home .carousel-item {
     height: 400px !important;
   }
+
   .ads-background {
     height: 100% !important;
-     object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -13027,5 +13056,5 @@ footer {
 
 .ads-background {
   height: 500px;
-   object-fit: cover;
+  object-fit: cover;
 }
