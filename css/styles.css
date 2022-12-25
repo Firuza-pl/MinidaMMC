@@ -6375,7 +6375,7 @@ fieldset:disabled .btn {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0;
 }
 
 .modal-footer {
@@ -6438,6 +6438,8 @@ fieldset:disabled .btn {
   height: 100%;
   border: 0;
   border-radius: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .modal-fullscreen .modal-header {
@@ -12835,6 +12837,10 @@ header.masthead .masthead-heading {
   #home .carousel-item {
     height: 400px !important;
   }
+  .ads-background {
+    height: 100% !important;
+     object-fit: cover;
+  }
 }
 
 .read-more {
@@ -13017,4 +13023,9 @@ header#single-blog-header {
 footer {
   background: #212529;
   color: #fff;
+}
+
+.ads-background {
+  height: 500px;
+   object-fit: cover;
 }
