@@ -3265,6 +3265,7 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #212529;
   border-color: #212529;
+  box-shadow: 1px 4px 14px #2a2e5e;
 }
 
 .btn-check:focus+.btn-primary,
@@ -3281,8 +3282,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #cca000;
-  border-color: #bf9600;
+  background-color: #2a2e5e;
+  border-color: #2a2e5e;
 }
 
 .btn-check:checked+.btn-primary:focus,
