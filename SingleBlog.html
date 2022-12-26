@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/glightbox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
@@ -47,7 +49,7 @@
     <header id="single-blog-header" class="py-5 bg-light border-bottom mb-4">
         <div class="container">
             <div class="text-center my-5">
-                <h1 class="fw-bolder">Böyük başlıq</h1>
+                <h1 class="fw-bolder" data-aos="zoom-out-down" data-aos-duration="800">Böyük başlıq</h1>
             </div>
         </div>
     </header>
@@ -55,7 +57,7 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
 
-                <h2 class="section-heading">Mini başlıq 1</h2>
+                <h2 class="section-heading" >Mini başlıq 1</h2>
 
                 <blockquote class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ipsa
                     dolores quaerat veritatis! Aperiam iste earum repellendus ab fugiat libero. Aspernatur placeat
@@ -70,7 +72,9 @@
                     dolores accusantium quia reiciendis corporis voluptas rem laboriosam ex porro, quasi rerum eveniet
                     corrupti facilis. Dolor.</p>
 
-                <a href="#!"><img class="img-fluid"
+                <a href="#!" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"><img class="img-fluid"
                         src="https://img.freepik.com/premium-photo/woman-hand-light-bulb-keyboard-desk_218381-2384.jpg?w=900"
                         alt="blog"></a>
 
@@ -592,6 +596,10 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/jQuery.paginate.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script>
         $(function () {
             $("#next-ads").on('click', function () {
