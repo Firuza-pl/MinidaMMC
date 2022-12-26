@@ -13042,19 +13042,24 @@ header#single-blog-header {
   background-size: cover;
 }
 
-
-#blog-single-content .fill img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-}
-
 footer {
   background: #212529;
   color: #fff;
 }
 
 .ads-background {
-  height: 500px;
+  height: 560px;
   object-fit: cover;
+}
+
+.ads-background img{
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+#blog-single-content  .fill img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
