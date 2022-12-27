@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="../assets/css/demo_1/style.css" />
   <!-- End layout styles -->
   <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
   <link rel="stylesheet" href="../assets/css/demo_1/mainAdmin.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
 </head>
 
 <body>
@@ -32,7 +34,8 @@
         <li class="nav-item nav-profile border-bottom">
           <a href="#" class="nav-link flex-column">
             <div class="nav-profile-image">
-              <img src="../assets/images/faces/face1.jpg" alt="profile" />
+              <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt="profile" />
               <!--change to offline or busy as needed-->
             </div>
             <div class="nav-profile-text d-flex ms-0 mb-3 flex-column">
@@ -45,14 +48,32 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Dashboard.html">
-            <i class="mdi mdi-compass-outline menu-icon"></i>
-            <span class="menu-title">Dashboard</span>
+            <i class="mdi mdi-collage menu-icon"></i>
+            <span class="menu-title">Ümumi</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html">
-            <i class="mdi mdi-compass-outline menu-icon"></i>
-            <span class="menu-title">General</span>
+            <i class="mdi mdi-settings menu-icon"></i>
+            <span class="menu-title">İdarə tablosu</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Carusel.html">
+            <i class="mdi mdi-domain menu-icon"></i>
+            <span class="menu-title">Əsas səhifə</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Place.html">
+            <i class="mdi mdi-monitor menu-icon"></i>
+            <span class="menu-title">Reklam məkanları</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Blogs.html">
+            <i class="mdi mdi-note-text menu-icon"></i>
+            <span class="menu-title">Bloglar</span>
           </a>
         </li>
       </ul>
@@ -71,8 +92,8 @@
           </div>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-logout d-none d-lg-block">
-              <a class="nav-link" href="Login.html">
-                <i class="mdi mdi-home-circle"></i> LogOut
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home-circle"></i> &nbsp; Çıxış
               </a>
             </li>
           </ul>
@@ -90,76 +111,43 @@
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">General Page</h4>
-                  <p class="card-description"><button type="button" class="btn btn-dark"><a href="crud/add.html">Primary</a> </button></code>
+                  <h4 class="card-title">
+                    İdarə tablosu</h4>
+                  <p class="card-description"><button type="button" class="btn btn-dark"><a href="crud/add.html">Əlavə
+                        et</a> </button></code>
                   </p>
                   <div class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover" id="main-table">
-                      <thead class="table-dark">
+                    <table id="main-table" class="table table-striped table-bordered" style="width:100%">
+                      <thead>
                         <tr>
-                          <th>#</th>
-                          <th>First name</th>
-                          <th>Date</th>
+                          <th>Nömrə 1</th>
+                          <th>Nömrə 2</th>
+                          <th>Nömrə 3</th>
+                          <th>Email </th>
                           <th>Image</th>
-                          <th>Operations</th>
+                          <th>Əməliyyatlar</th>
+
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>1</td>
-                          <td>Firuza Poladzada</td>
-                          <td>2021-02-03</td>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
                           <td class="w-25">
                             <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/sheep-3.jpg" class="img-fluid img-thumbnail" alt="Sheep">
                           </td>
                           <td>
                             <a href="">
-                            <i class="mdi mdi-delete-forever"></i>
+                              <i class="mdi mdi-delete-forever"></i>
                             </a> |
                             <a href="">
                               <i class="mdi mdi-table-edit"></i>
-                            </a>|
-                            <a href="">
-                              <i class="mdi mdi-book-open-variant"></i>
                             </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Kama Askerova</td>
-                          <td>2021-02-03</td>
-                          <td class="w-25">
-                            <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/sheep-3.jpg" class="img-fluid img-thumbnail" alt="Sheep">
-                          </td>
-                          <td>
-                            <a href="">
-                            <i class="mdi mdi-delete-forever"></i>
-                            </a> |
-                            <a href="">
-                              <i class="mdi mdi-table-edit"></i>
-                            </a>|
-                            <a href="">
+                            <!-- <a href="">
                               <i class="mdi mdi-book-open-variant"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Agabey Askerov</td>
-                          <td>2021-02-03</td>
-                          <td class="w-25">
-                            <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/sheep-3.jpg" class="img-fluid img-thumbnail" alt="Sheep">
-                          </td>
-                          <td>
-                            <a href="">
-                            <i class="mdi mdi-delete-forever"></i>
-                            </a> |
-                            <a href="">
-                              <i class="mdi mdi-table-edit"></i>
-                            </a>|
-                            <a href="">
-                              <i class="mdi mdi-book-open-variant"></i>
-                            </a>
+                            </a> -->
                           </td>
                         </tr>
                       </tbody>
@@ -209,6 +197,9 @@
   <!-- endinject -->
   <!-- Custom js for this page -->
   <script src="../assets/js/dashboard.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+  <script src="../assets/js/main.js"> </script>
   <!-- End custom js for this page -->
 </body>
 

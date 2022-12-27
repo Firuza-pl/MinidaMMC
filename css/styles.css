@@ -12870,6 +12870,17 @@ header.masthead .masthead-heading {
     height: 100% !important;
     object-fit: cover;
   }
+  .team-member{
+    background-clip: border-box;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  .team-member hr{
+    display: none;
+  }
+  .team-member h4{
+    padding-bottom: 15px;
+  }
 }
 
 .read-more {
